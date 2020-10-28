@@ -1,8 +1,9 @@
 import React from "react";
-import { StyleSheet, Text, TouchableWithoutFeedback, View } from 'react-native';
+import { StyleSheet, Text, StatusBar, View } from 'react-native';
 
 export default function Loading() {
   return <View style={styles.container}>
+    <StatusBar barStyle="dark-content" />
     <Text style={styles.text}>Getting the fucking weather</Text>
   </View>
 }
